@@ -6,7 +6,9 @@ import argparse
 import os
 import uuid
 
-FILEPATH = '/home/adithyan/Adithyan/projects/mini-projects/tasks.json'
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+FILEPATH = os.path.join(BASE_DIR, 'tasks.json')
 
 
 # function to get all task from task.json
