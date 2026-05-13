@@ -4,7 +4,7 @@ A professional CLI Todo manager with unique ID generation and persistent storage
 ## Installation
 
 ### Linux/macOS
-1. `git clone https://github.com/yourusername/Tasks-CLI.git`
+1. `git clone https://github.com/Adithyan-cb/Tasks-CLI.git`
 2. `cd Tasks-CLI`
 3. `chmod +x install.sh && ./install.sh`
 
