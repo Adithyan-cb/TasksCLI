@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 import json
 import sys
-import random
 from datetime import datetime
 import argparse
 import os
+import uuid
 
 FILEPATH = '/home/adithyan/Adithyan/projects/mini-projects/tasks.json'
 
@@ -27,8 +27,7 @@ def getTask(filename:str):
 # fucntion to add new task
 def addTask(task:str):
     # generate unique ID for each task
-    alphs=['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z']
-    ID = f"{random.choice(alphs)}{random.randint(1,500)}"
+    ID = str(uuid.uuid4())[:4]
     createdAt = datetime.now()
     data={
             "id":ID,
